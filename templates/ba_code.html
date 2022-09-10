@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="Width=device-width">
+        <title>BA Downlads</title>
+        <link
+            href="{{url_for('static', path='/css/app.css')}}"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-white">
+        <div class="container mx-auto bg-white shadow-xl rounded-2xl border border-slate-900 grid grid-cols-1 mt-10 p-10 content-center">
+            <span class="text-sm">
+                You can either download the Markdown file direktly or get is as a knitted document (HTML or Pdf). If you want to work with the code in R studio choose the Markdownfile.
+            </span>
+            
+            <button onclick="window.location.href = '/ba_r_md';" class=" bg-teal-300 border border-white rounded-full hover hover:bg-white hover:border hover:border-teal-300 py-2 px-5">
+                Markdown file
+            </button>
+        
+            <button onclick="window.location.href = '/ba_r_html';" class=" bg-teal-300 border border-white rounded-full hover hover:bg-white hover:border hover:border-teal-300 py-2 px-5">
+                Markdown file knitted to HTML
+            </button>
+
+            <button  class="cursor-not-allowed bg-teal-300 border border-white rounded-full hover hover:bg-white hover:border hover:border-teal-300 py-2 px-5">
+                Markdown file knitted to Pdf
+            </button>
+            
+        </div>
+</html>

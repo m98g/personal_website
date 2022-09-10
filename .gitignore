@@ -1,0 +1,12 @@
+tailwindcss/node_modules/
+*.jpg
+*.png
+*.jpeg
+static/downloads/
+replication_larsen.html
+ba.html
+hungergames.html
+*.deta
+*.vscode
+__pycache__
+*.DS_Store
