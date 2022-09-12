@@ -49,7 +49,7 @@ third_party_path = downloadfolder / "third_party.pdf"
 
 johnston_rep_path = downloadfolder / "johnston_rep.pdf"
 
-cv_path = downloadfolder / "cv.txt"
+cv_path = downloadfolder / "cv.pdf"
 
 # the pdf of the study
 @app.get("/ba")
